@@ -38,7 +38,7 @@ app.use(express.json());
 app.use(cors(corsOptions));
 // app.use("/rental", rentalController);
 
-//test
+// test
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
