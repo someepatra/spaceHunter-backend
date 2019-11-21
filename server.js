@@ -10,7 +10,7 @@ const cors = require("cors");
       CONTROLLERS
 ========================*/
 const PORT = 3003;
-// const rentalController = require("./controller/rentalSpace.js");
+const rentalController = require("./controller/rentalSpace.js");
 
 /*======================
       WHITELIST 
@@ -36,12 +36,12 @@ const corsOptions = {
 ========================*/
 app.use(express.json());
 app.use(cors(corsOptions));
-// app.use("/rental", rentalController);
+app.use("/rental", rentalController);
 
-//test
-app.get("/", (req, res) => {
-  res.send("Hello World");
-});
+// //test
+// app.get("/", (req, res) => {
+//   res.send("Hello World");
+// });
 
 /*======================
         MONGOOSE 
