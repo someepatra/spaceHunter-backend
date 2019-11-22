@@ -9,7 +9,9 @@ const mongoose = require("mongoose");
 
 const rentalSchema = mongoose.Schema({
   owner: { type: String, required: true },
-  location: { type: String, required: true },
+  city: { type: String, required: true },
+  state: { type: String, default: "" },
+  country: { type: String, required: true },
   price: { type: Number, required: true },
   contactInfo: { type: String, required: true },
   occupancy: { type: String },
