@@ -5,7 +5,9 @@ const RentalModel = require("./rentalSchema");
 const seedRental = [
   {
     owner: "Carmen P.",
-    location: "Tampa, FL",
+    city: "Tampa",
+    state: "Florida",
+    country: "USA",
     price: 500,
     contactInfo: "cperez123@gmail.com",
     occupancy: "4-5 people",
@@ -18,7 +20,9 @@ const seedRental = [
   },
   {
     owner: "Mausumi P.",
-    location: "San Fransisco, CA",
+    city: "San Fransisco",
+    state: "California",
+    country: "USA",
     price: 400,
     contactInfo: "213-202-4444",
     occupancy: "3 people",
@@ -31,7 +35,9 @@ const seedRental = [
   },
   {
     owner: "Justin K.",
-    location: "London, England",
+    city: "London",
+    state: "",
+    country: "England",
     price: 2000,
     contactInfo: "Justinemail@hotmail.com",
     occupancy: "100-250 people",
@@ -44,7 +50,9 @@ const seedRental = [
   },
   {
     owner: "John D.",
-    location: "New York, NY",
+    city: "Miami",
+    state: "Florida",
+    country: "USA",
     price: 250,
     contactInfo: "222-222-2222",
     occupancy: "2 people",
@@ -57,7 +65,9 @@ const seedRental = [
   },
   {
     owner: "Sally S.",
-    location: "Dallas, Texas",
+    city: "Portland",
+    state: "Oregon",
+    country: "USA",
     price: 400,
     contactInfo: "test@gmail.com",
     occupancy: "100 people",

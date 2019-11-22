@@ -44,7 +44,7 @@ router.put("/:id", (req, res) => {
   );
 });
 
-//         SHOW         //
+//          CREATE       //
 router.post("/", (req, res) => {
   Rental.create(req.body, (error, createdRental) => {
     if (error) {
