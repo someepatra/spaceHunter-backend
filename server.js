@@ -18,7 +18,7 @@ const rentalController = require("./controller/rentalSpace.js");
 ========================*/
 const whitelist = [
   "http://localhost:3000",
-  "https://fathomless-sierra-68956.herokuapp.com"
+  "https://spacehunter-backend.herokuapp.com"
 ];
 /*======================
         CORS
