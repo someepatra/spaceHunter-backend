@@ -9,7 +9,8 @@ const cors = require("cors");
 /*======================
       CONTROLLERS
 ========================*/
-const PORT = 3003;
+const PORT =  process.env.PORT || 3003;
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/rental'
 const rentalController = require("./controller/rentalSpace.js");
 
 /*======================
@@ -17,7 +18,7 @@ const rentalController = require("./controller/rentalSpace.js");
 ========================*/
 const whitelist = [
   "http://localhost:3000",
-  "https://fathomless-sierra-68956.herokuapp.com"
+  "https://spacehunter-backend.herokuapp.com"
 ];
 /*======================
         CORS
@@ -51,7 +52,7 @@ mongoose.connection.on("error", err =>
 );
 mongoose.connection.on("disconnected", () => console.log("mongo disconnected"));
 
-mongoose.connect("mongodb://localhost:27017/rental", {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true
 });
 mongoose.connection.once("open", () => {
